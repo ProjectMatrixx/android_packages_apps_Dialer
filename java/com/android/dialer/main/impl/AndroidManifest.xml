@@ -114,11 +114,11 @@
     <!-- This is the historical name of the "main" activity and is kept as an alias for backwards
          compatibility in case older apps refer to the activity in this way. -->
 
-    <!--  {@deprecated Use .MainActivity instead.} -->
-    <activity-alias
-        android:name="com.android.dialer.app.DialtactsActivity"
-        android:exported="true"
-        android:targetActivity=".MainActivity"/>
+    <activity
+        android:name="com.android.dialer.main.impl.DefaultDialerActivity"
+        android:exported="false"
+        android:launchMode="singleTask"
+        android:theme="@style/MainActivityTheme" />
 
   </application>
 </manifest>
